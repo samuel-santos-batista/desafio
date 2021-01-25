@@ -1,0 +1,39 @@
+.empty-cart{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.empty-cart>div{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.empty-cart h1{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.empty-cart p{
+    --tw-text-opacity: 1;
+    color: rgba(107, 114, 128, var(--tw-text-opacity));
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+
+
+}
+
+.empty-cart img{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.empty-cart a{
+    margin: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}

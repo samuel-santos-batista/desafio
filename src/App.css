@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  line-height: 1.43;
+  height: 100vh;
+  color: #484848;  
+  overflow-x: hidden;
+}
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+a:link{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+a:visited{
+    text-decoration: none;
+    padding: 0;
+}
+button:focus{
+    outline-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+ul, ol{
+    list-style-type: none;
+}
+::selection{
+    color:  #fff; /*Ao selecionar texto e elementos*/
+    background-color: #8800ff;
+}
+::-moz-selection{
+     color:  #fff;/*Para brosers mais legados*/
+    background-color: #8800ff;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.row{
+    position: relative;
+    max-width: 970px;
+    height: auto;
+    margin: 0 auto;
+}
+@media all and (max-width: 1000px){
+    .row{
+        padding: 0 15px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-primary{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+    border-radius: 9999px;
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    font-weight: bold;
+    margin-top: 1rem;
+    background-color: #8800ff;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+}
+.btn-primary:hover{
+    background-color: #601df7;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #eae8ec;
 }
+input{
+    font-size: 19px;
+    outline: none;
+    
+}
+input::placeholder{
+    color: #777;
+    font-size: 1.18rem;
+
+}
+input::-webkit-input-placeholder{
+    color: #777;
+}
+input::-moz-placeholder{
+    color: #777;
+}
+input:-ms-input-placeholder{
+    color: #777;
+}
+input[type="text"]{
+    border: solid 1px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    padding: 19px 15px;
+    width: 100%;
+    display: inline-block;
+    transition: all 0.3s ease;/*Transição suave quando hover*/
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border-top-left-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-top-bottom-radius: 3px;
+    
+    
+}
+input[type="text"]:focus{
+    border-bottom: 3px solid #8800ff;
+}
+.button{
+    display: inline-block;
+    padding: 20px 0;
+    height: 64px;
+    border: none;
+    color: #fff;
+    background-color: #8800ff;
+    cursor: pointer;
+    transition: all 0.3s ease;/*Transição suave quando hover*/
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    text-align: center;
+}
+.button:hover{
+    background-color: #601df7;
+}
+.ajs-message.ajs-custom { color: #fff;  background-color: #8800ff; font-weight: 700; }

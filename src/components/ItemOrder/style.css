@@ -1,0 +1,66 @@
+.item{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.item img{
+    width: 6rem;
+}
+.item-information{
+    margin-left: 1rem;
+    flex: 1 1 0%;
+
+}
+.item div+span{
+    flex: 1 1 0%;
+}
+.item span+span{
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.box-total{
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.txt-total{
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.box-total span+span{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: blueviolet;
+}
+.remove-to-cart{
+    border: 2px solid ;
+    color: #8800ff;
+    transition: all .3s ease-in-out;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 1.5rem;
+
+}
+
+.remove-to-cart:hover{
+    background: #8800ff;
+    border: #ffffff;
+    color: #ffffff;
+}
+.remove-to-cart:focus{
+    outline-style: none;
+}
+.remove-to-cart span+span{
+    margin-left: 1rem;
+}

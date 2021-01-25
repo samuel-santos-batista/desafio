@@ -1,0 +1,32 @@
+.btn-cart{
+    display: inline-block;
+    background: #8800ff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+.btn-cart:hover{
+    background-color: #601df7;
+}
+header {
+    width: 90%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li a{
+    transition: all .3s ease-in-out;
+}
+header li a:hover{
+    color: #8800ff;
+}
+header li {
+    margin-left: 1.5rem;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

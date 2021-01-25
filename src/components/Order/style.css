@@ -1,0 +1,51 @@
+.order{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-order{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;
+    border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+    padding-bottom: 1rem;
+}
+.header-order h1{
+    font-weight: bold;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.box-total{
+    text-align: right;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.txt-total{
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.box-total span+span{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    color: #8800ff;
+}
+.box-total span+span:hover{
+    background-color: #601df7;
+}
+.form-client{
+    margin-top: 3rem;
+}
+
+
+.form-client button{
+    margin-top: 1.5rem;
+    
+}
+.form-client button{
+    outline-style: none;
+}

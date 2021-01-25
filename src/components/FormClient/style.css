@@ -1,0 +1,100 @@
+/*moto*/
+#moto{
+    font-size: 40px;
+    font-weight: 300;
+    color: #484848;
+    margin: 60px 0;
+    letter-spacing: 1.8px;
+}
+#moto span{
+    color: #8800ff;
+    font-weight: 700;
+}
+/*form*/
+.form-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.inline{
+    display: flex;
+    flex-direction: row;
+}
+
+.input-name, .input-address{
+    margin-right: 0.25rem;
+}
+.input-telephone, .input-number{
+    margin-left: 0.25rem;
+}
+.input-number{
+    max-width: 20%;
+}
+.input-telephone{
+    max-width: 30%;
+}
+@media (max-width: 400px)
+{
+    .inline{
+        flex-direction: column;
+    }
+    .input-number, .input-telephone{
+        min-width: 100%;
+        margin-left: 0;
+        margin-top: 1.75rem;
+    }
+    .input-address, .input-name{
+        margin-right: 0;
+
+    }
+}
+.input{
+    margin-top: 1.75rem;
+    background-color: white;
+}
+.payment{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0;
+	margin-top: 1.75rem;
+}
+input[type="radio"]{
+	-webkit-appearance:none;
+}
+label{
+	margin: 0;
+	border:1px solid #18f98d;
+	position: relative;
+	border-radius: 10px;
+	color: #18f98d;
+	transition: 0.5s;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	min-width: 50%;
+}
+.fa{
+	font-size: 3rem;
+	margin: auto;
+	
+}
+label>span{
+	margin: auto;
+	font-size: 25px;
+	font-weight: 500;
+}
+input[type="radio"]:checked + label{
+	background-color: #18f98d;
+	color: white;
+	box-shadow: 0 15px 45px rgba(24,249,141,0.2);
+}
+
+.btn-submit{
+    width: 100%;
+}
+div>.btn-submit{
+    margin-bottom: 1.75rem;
+}
