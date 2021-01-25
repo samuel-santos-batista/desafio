@@ -55,7 +55,7 @@ export default function Cart(){
             const storagedItens = JSON.parse(localStorage.getItem('@foodCart:itens'))
 
             setItens([...storagedItens])
-            alertify.notify('Item adicionado!', 'custom', 2, function(){  console.log('dismissed'); });
+            alertify.notify('Item removido!', 'custom', 2, function(){  console.log('dismissed'); });
   
         }
     }
